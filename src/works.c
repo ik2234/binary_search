@@ -24,7 +24,7 @@ int main(){
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
   }
-  lb = -1;
+  lb = 0;
   ub = 1000000000; // 10^9
   while(ub - lb > 1){
     int mid = (ub + lb) / 2;
