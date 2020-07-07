@@ -20,10 +20,10 @@ int main(){
     scanf("%d", &A[i]);
   }
   lb = 0;
-  ub = 1000000000; // 10^9
+  ub = 1000000001; // 10^9+1 
   while(ub - lb > 1){
     int mid = (ub + lb) / 2;
-    if(mid && p(A, n, k, mid)) ub = mid; // midが0でないかつ...
+    if(p(A, n, k, mid)) ub = mid;
     else lb = mid;
   }
   printf("%d\n", lb);
